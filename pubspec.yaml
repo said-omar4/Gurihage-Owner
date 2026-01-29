@@ -1,20 +1,20 @@
 name: xirfadsan_receipt
-description: Receipt UI + PDF + Share - converted from React/TS
+description: Receipt UI + PDF + Share
 publish_to: "none"
+version: 1.0.0+1
 
 environment:
-  sdk: ">=2.18.0 <4.0.0"
+  sdk: ">=3.0.0 <4.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
-  google_fonts: ^6.1.0 # Si loo helo font-yada casriga ah sida Inter iyo Space Mono
-  intl: ^0.18.1        # Si loo helo NumberFormat.currency
-  dotted_border: ^2.1.0
-  # flutter_svg: ^2.0.9 # Haddii logo-gu yahay SVG
-  # share_plus: ^7.1.0  # Wadaagista (Sharing)
-  # url_launcher: ^6.2.1 # Loogu talagalay daabacaadda web-ka
-
+  intl: ^0.20.2
+  provider: ^6.1.1
+  image_picker: ^1.0.4  # For image upload
+  iconsax: 0.0.8       # For icons
+  url_launcher: ^6.2.2
+  device_preview: ^1.2.0
 
 dev_dependencies:
   flutter_test:
@@ -24,7 +24,8 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   
-  # Kani waa inuu sax noqdaa. Labada khad ee hoose waa inay xoogaa ka hooseeyaan "flutter:"
-  assets:
-    # U hubso inaanay jirin wax la mid ah assets/assets/...
-    - assets/xirfadsan-logo.jpg  # U hubso inuu magacan sax yahay, oo uu ku dhamaanayo (.jpg ama .png)
+  # Comment out fonts for now to test
+  # fonts:
+  #   - family: Poppins
+  #     fonts:
+  #       - asset: assets/fonts/Poppins-Regular.ttf
