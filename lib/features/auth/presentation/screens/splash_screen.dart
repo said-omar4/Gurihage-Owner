@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:xirfadsan_receipt/features/auth/presentation/screens/login_screen.dart';
 import 'package:xirfadsan_receipt/main.dart';
 import 'dart:async';
-import 'package:xirfadsan_receipt/main_app.dart'; // Import main.dart for MainApp
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
